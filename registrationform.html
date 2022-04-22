@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+            rel="stylesheet"
+            />
+        <link rel="stylesheet" href="ermika.css" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Create an Account</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li class="logo2">Ermika</li>
+                    <li>
+                        
+                         <input type = "search" id = "search" name = "search">
+                        <a class="icon">
+                        <i class="fas fa-search" onclick="collapseSidebar()">Search</i>
+                        </a>
+                    </li>
+                    <li class="items"><a href="index.html">Homepage</a></li>
+                    <li class="items"><a href="registrationform.html">Registration</a></li>
+                    <li class="items"><a href="login.html">Log in</a></li>
+                    <li class="items"><a href="contact.html">Contact</a></li>
+                    <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End of Navbar -->
+        <section>
+            <div class="form-wrapper">
+                <div class="form">
+                    <h4 class="text-center mb-4">Registration Form</h4>
+                    <form method="post" enctype="multipart/form-data">
+                        <?php registration_form(); ?>
+                        <div class="input-group mb-3">
+                            <label>Enter Full Name</label>
+                            <input type="text" class="form-control" name="username" placeholder="....." required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label>Enter Email ID</label>
+                            <input type="email" class="form-control" name="email" placeholder="....." required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <select name="gender" class="form-control">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label>Enter Phone No</label>
+                            <input type="text" class="form-control" name="number" placeholder="....." required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label>Enter Password</label>
+                            <input type="password" class="form-control" name="password1" placeholder="....." required>
+                        </div>
+                        <div class="input-group mb-3">
+                        <select class="select">
+                            <option disabled selected>Select Course</option>
+                            <optgroup label="Graphic Design">
+                                <option value = "Adobe Photoshop">Adobe Photoshop</option>
+                                <option value = "Adobe Illustrator">Adobe Illustrator</option>
+                                <option value = "Freelancing with Graphic Design">Freelancing with Graphic Design</option>
+                            </optgroup>
+                            <optgroup label="Web Design">
+                                <option value = "Frontend">Frontend</option>
+                                <option value = "Backend">Backend</option>
+                                <option value = "Full Stack">Full Stack</option>
+                            </optgroup>
+                            <optgroup label="Animation">
+                                <option value = "2D Animation">2D Animation</option>
+                                <option value = "3D Animation">3D Animation</option>
+                            </optgroup>
+                        </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control" name="password2" placeholder="....." required>
+                        </div>
+                        <div class="input-group">
+                            <button class="btn btn-primary" name="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End of Contact -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-list">
+            <a href="www.facebook.com" class="footer-link">Facebook</a>
+            <a href="www.instagram.com" class="footer-link">Instagram</a>
+            <a href="www.twitter.com" class="footer-link">Twitter</a>
+            <a href="www.linkedin.com" class="footer-link">Linkedin</a>
+            <a href="www.youtube.com" class="footer-link">Youtube</a>
+            </div>
+           
+        </footer>
+        <!-- End of Footer -->
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
